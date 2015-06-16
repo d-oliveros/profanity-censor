@@ -1,0 +1,30 @@
+{
+  "name": "profanity-filter",
+  "version": "1.0.0",
+  "description": "Profanity filter for node.js",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/d-oliveros/profanity-filter.git"
+  },
+  "keywords": [
+    "profanity",
+    "filter",
+    "curse",
+    "swear",
+    "bad",
+    "words"
+  ],
+  "author": "David Oliveros",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/d-oliveros/profanity-filter/issues"
+  },
+  "homepage": "https://github.com/d-oliveros/profanity-filter"
+}
