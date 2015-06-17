@@ -1,4 +1,4 @@
-# profanity-filter
+# profanity-censor
 
 A tiny node.js module for censoring curse and bad words. it hosts a default dictionary,
 with the option to use your own.
@@ -10,7 +10,7 @@ with the option to use your own.
 Replaces the bad words in the string with asterisks. Returns the censored string.
 
 ```javascript
-var profanity = require('profanity-filter');
+var profanity = require('profanity-censor');
 
 console.log(profanity.filter('Bad words here.'));
 ```
@@ -21,7 +21,7 @@ Replaces the dictionary with a provided dictionary. The dictionary should be an
 array of strings.
 
 ```javascript
-var profanity = require('profanity-filter');
+var profanity = require('profanity-censor');
 var dictionary = ['popcorn', 'bad words'];
 profanity.use(dictionary);
 ```
