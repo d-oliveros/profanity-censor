@@ -4,31 +4,31 @@ var dictionary = require('../lib/dictionary');
 var expect = require('chai').expect;
 
 describe('Profanity', function() {
-	describe('filter', function() {
-		it('should filter curse words from a string', function() {
-			var profaneString = 'Hey faggot';
-			var censuredString = profanity.filter(profaneString);
+  describe('filter', function() {
+    it('should filter curse words from a string', function() {
+      var profaneString = 'Hey faggot';
+      var censuredString = profanity.filter(profaneString);
 
-			expect(censuredString).to.equal('Hey ******');
-		});
-	});
+      expect(censuredString).to.equal('Hey ******');
+    });
+  });
 
-	describe('use', function() {
-		it('should change the dictionary', function() {
-			expect(profanity.dictionary).to.equal(dictionary);
+  describe('use', function() {
+    it('should change the dictionary', function() {
+      expect(profanity.dictionary).to.equal(dictionary);
 
-			var newDictionary = ['popcorn'];
-			profanity.use(newDictionary);
+      var newDictionary = ['popcorn'];
+      profanity.use(newDictionary);
 
-			expect(profanity.dictionary).to.deep.equal(newDictionary);
-		});
+      expect(profanity.dictionary).to.deep.equal(newDictionary);
+    });
 
-		it('should filter curse words using a new dictionary', function() {
-			var newDictionary = ['popcorn'];
-			profanity.use(newDictionary);
+    it('should filter curse words using a new dictionary', function() {
+      var newDictionary = ['popcorn'];
+      profanity.use(newDictionary);
 
-			var censuredString = profanity.filter('I love popcorn!');
-			expect(censuredString).to.equal('I love *******!');
-		});
-	});
+      var censuredString = profanity.filter('I love popcorn!');
+      expect(censuredString).to.equal('I love *******!');
+    });
+  });
 });
