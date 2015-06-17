@@ -1,6 +1,6 @@
 # profanity-censor
 
-A tiny node.js module for censoring curse and bad words. it hosts a default dictionary,
+A tiny node.js module for censoring curse and bad words. It hosts a default dictionary,
 with the option to use your own.
 
 ## API
