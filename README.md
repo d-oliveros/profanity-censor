@@ -3,6 +3,12 @@
 A tiny node.js module for censoring curse and bad words. It hosts a default dictionary,
 with the option to use your own.
 
+## Installation
+
+```
+npm install --save profanity-censor
+```
+
 ## API
 
 ### profanity.filter(string)
