@@ -1,6 +1,6 @@
 {
   "name": "profanity-censor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Profanity filter for node.js",
   "main": "index.js",
   "directories": {
