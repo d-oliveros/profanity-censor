@@ -13,6 +13,27 @@ describe('Profanity', function() {
     });
   });
 
+  describe('getProfaneWords', function() {
+    it('this returns words that would have been filtered', function() {
+      var profaneString = 'Hey faggot';
+      var censoredList = profanity.getProfaneWords(profaneString);
+
+      expect(censoredList[0]).to.equal('faggot');
+    });
+  });
+
+  describe('getProfaneWords more than one', function() {
+    it('this returns words that would have been filtered', function() {
+      var profaneString = 'Hey faggot fucker shit';
+      var censoredList = profanity.getProfaneWords(profaneString);
+
+      expect(censoredList.length).to.equal(3);
+      expect(censoredList.indexOf('fucker')).not.equal(-1);
+      expect(censoredList.indexOf('shit')).not.equal(-1);
+      expect(censoredList.indexOf('faggot')).not.equal(-1);
+    });
+  });
+
   describe('use', function() {
     it('should change the dictionary', function() {
       expect(profanity.dictionary).to.equal(dictionary);
