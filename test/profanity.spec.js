@@ -34,6 +34,20 @@ describe('Profanity', function() {
     });
   });
 
+  describe('has', function() {
+    it('should return true', function () {
+      var str = 'Hey faggot fucker shit';
+      var result = profanity.has(str);
+      expect(result).to.equal(true);
+    });
+
+    it('should return false', function () {
+      var str = 'Hey Mr. Nice Guy.';
+      var result = profanity.has(str);
+      expect(result).to.equal(false);
+    });
+  });
+
   describe('use', function() {
     it('should change the dictionary', function() {
       expect(profanity.dictionary).to.equal(dictionary);
