@@ -1,6 +1,6 @@
 {
   "name": "profanity-censor",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Profanity filter for node.js",
   "main": "index.js",
   "directories": {
@@ -26,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/d-oliveros/profanity-censor/issues"
   },
-  "homepage": "https://github.com/d-oliveros/profanity-censor"
+  "homepage": "https://github.com/d-oliveros/profanity-censor",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
 }
